@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- ===================navbar====================== -->
+        <nav id="navbar" class="nav-bar">
+            <section class="nav-head">
+                <div class="nav-cc">
+                    <img src="../IMAGES/icon/header_icon.png" alt="">
+                    
+                    <div class="dropdown">
+                        <div id="ddownlist">
+                            <p id="ddowntext">IND</p>
+                            <p id="dropIcon"><i class="fa-solid fa-chevron-down" ></i></p>
+                        </div>
+
+                        <ul id="list" class="visible">
+                            <li class="option">IND</li>
+                            <li class="option">USA</li>
+                            <li class="option">JPN</li>
+                            <li class="option">RUS</li>
+                        </ul>
+                    </div>
+                    <p>+888 5555 4444</p>
+                </div>
+                <ul class="nav-head-links">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Checkout</a></li>
+                </ul>
+            </section> 
+            <!-- ===================nav section 1 end==================== -->
+
+            <section class="nav-sec-main">
+                <img src="../IMAGES/logo/logo.png" alt="Logo">
+                <ul class="nav-main">
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link">Home</a></li>
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link">Categories</a></li>
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link-hot"><p>HOT</p>Latest</a></li>
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link">Blog</a></li>
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link">Pages</a></li>
+                    <li class="nav-main-list-item"><a href="#" class="nav-main-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-icons">
+                    <div class="search-bar">
+                        <p><input type="text" placeholder="Search Products"></p>
+                        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                    </div>
+                    <!-- ===============wishlist===================== -->
+                    <div class="wishlist"> 
+                        <p><span class="wish-count">0</span><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                    <!-- ==========================cart===================== -->
+                    <div class="cart"> 
+                        <p><span class="cart-count">0</span><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>    
+                </div>
+                <p class="signin"><a href="#">Sign In</a></p>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+            </section>
+        </nav>
+        <!-- ======================narbar end=================== -->
+    </header>
+
+    <main class="banner">
+        <div class="banner-img">
+            <img src="../IMAGES/hero/hero_man.png" alt="">
+        </div>
+
+        <section class="sigin-login">
+            <article class="tabs">
+            <div class="back"></div>
+            <label class="tab-sign-in" >
+                LOGIN
+            </label>
+            <label class="tab-log-in">
+                SIGN IN
+            </label>
+            </article>
+    
+            <article class="tabs-holder">
+                <div id="sign-in-form">
+                    <form action="#">
+                        <div class="fields">
+                        <label for="name">Name</label>
+                        <input type="text" name="" id="name">
+                        </div>
+        
+                        <div class="fields">
+                        <label for="email">Email</label>
+                        <input type="email" name="" id="email">
+                        </div>
+        
+                         <div class="fields">
+                        <label for="user">Username</label>
+                        <input type="text" name="" id="user">
+                        </div>
+        
+                        <div class="fields">
+                        <label for="pass">Password</label>
+                        <input type="text" name="" id="pass">
+                        </div>
+        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+        
+                <div id="log-in-form">
+                    <form action="#">
+                        <div class="fields">
+                        <label for="userl">Username</label>
+                        <input type="text" name="" id="userl">
+                        </div>
+        
+                        <div class="fields">
+                        <label for="passl">Password</label>
+                        <input type="text" name="" id="passl">
+                        </div>
+        
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </article>
+          </section>
+
+        <div class="banner-content">
+            <p>60% Discount</p>
+            <p class="banner-title">Winter <br>Collection</p>
+            <p>Best Cloth Collection By 2020!</p>
+            <button>Shop Now</button>
+        </div>
+    </main>
+
+    <!-- ==================banner end======================== -->
+
+    <!-- ======================category section=================== -->
+
+    <section class="category">
+        <h1 class="cat-title">Shop by Category</h1>
+        <div class="cat-card-holder">
+            <div class="card-owmen">
+                <!-- <img src="../IMAGES/categori/cat1.jpg" alt="cat-1"> -->
+                <div class="cat-spec">
+                    <p>Owmen`S</p>
+                    <button>Best New Deals</button>
+                    <p>New Collection</p>
+                </div>
+            </div>
+            <div class="card-winter">
+                <div class="cat-winter-spec">
+                    <p>Discount!</p>
+                    <p>Winter Cloth</p>
+                    <p>New Collection</p>
+                </div>
+            </div>
+            <div class="card-men">
+                <div class="cat-spec">
+                    <p>Man'S Cloth</p>
+                    <button>Best New Deals</button>
+                    <p>New Collection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================categories section end========================= -->
+
+    <!-- =====================latest products================================== -->
+
+    <section class="latest-products">
+        <div class="lp-head">
+            <p>Latest Products</p>
+            <ul class="lp-links" id="filter-btns">
+                <li class="active-all" data-target="all">All</li>
+                <li data-target="New">New</li>
+                <li data-target="Featured">Featured</li>
+                <li data-target="Offer">Offer</li>
+            </ul>
+        </div>
+
+        <div class="lp-grid">
+            <div class="lp-card" data-id="New">
+                <img src="../IMAGES/categori/product1.png" alt="">
+                <p class="lp-img-text">New</p>
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>
+                    
+                </div>
+            </div>
+            <div class="lp-card" data-id="Featured">
+                <img src="../IMAGES/categori/product2.png" alt="">
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>
+                    
+                </div>
+            </div>
+            <div class="lp-card" data-id="New">
+                <img src="../IMAGES/categori/product3.png" alt="">
+                <p class="lp-img-text">New</p>
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>
+                    
+                </div>
+            </div>
+            <div class="lp-card" data-id="Offer">
+                <img src="../IMAGES/categori/product4.png" alt="">
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>
+                    
+                </div>
+            </div>
+            <div class="lp-card" data-id="Featured">
+                <img src="../IMAGES/categori/product5.png" alt="">
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>
+                    
+                </div>
+            </div>
+            <div class="lp-card" data-id="New">
+                <img src="../IMAGES/categori/product6.png" alt="">
+                <p class="lp-img-text">New</p>
+                <div class="lp-card-text">
+                    <p>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star orange"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>Green Dress with Details</p>
+                    <p>$40.00 <span class="line">$60.00</span></p>                   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==========================latest products section end================ -->
+
+    <section class="best-product">
+        <div class="best-prod-back">
+            <!-- <img src="../IMAGES/categori/card.png" alt=""> -->
+        </div>
+        <div class="lp-content">
+            <div class="lp-img-holder">
+                <p class="outlined-text">MANZ</p>
+                <div class="best-prod-img">
+                    <img src="../IMAGES/categori/card-man.png" alt="">
+                </div>
+            </div>
+    
+            <div class="best-prod-text">
+                <p>Find the best product from our shop.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, voluptatibus!</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <div class="lp-img">
+            <img src="../IMAGES/categori/card-shape.png" alt="">
+        </div>  
+    </section>
+    <!-- ==================best products end ================= -->
+
+    <section class="best-collection">
+        <div class="best-coll-text-holder">
+            <div class="best-coll-text">
+                <p>Best Collection <br> of this Month</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Shop Now</button>
+            </div>
+                <img src="../IMAGES/collection/collection1.png" alt="">
+        </div>
+
+        <div class="best-coll-img">
+            <img src="../IMAGES/collection/collection2.png" alt="">
+        </div>
+
+        <div class="best-coll-opt-holder">
+            <div class="best-coll-opt">
+                <p>Menz Winter Jacket</p>
+                <img src="../IMAGES/collection/collection3.png" alt="">
+            </div>
+            <div class="best-coll-opt">
+                <p>Menz Winter Jacket</p>
+                <img src="../IMAGES/collection/collection4.png" alt="">
+            </div>
+            <div class="best-coll-opt">
+                <p>Menz Winter Jacket</p>
+                <img src="../IMAGES/collection/collection5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========best collection section end============ -->
+
+    <section class="newsletter">
+        <div class="news-text">
+            <p>Get Our <br> latest offers News</p>
+            <p>Subscribe News Letter</p>
+        </div>
+        <div class="news-inpt">
+            <input type="text">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <!-- =======================newsletters section end==== -->
+
+    <section class="pay-ship">
+        <div class="shipping">
+            <i class="fa-solid fa-truck"></i>
+            <div class="ship-text">
+                <p>Free Shipping Method</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolores?</p>
+            </div>
+        </div>
+        <div class="shipping">
+            <i class="fa-solid fa-truck"></i>
+            <div class="ship-text">
+                <p>Secure payment system</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolores?</p>
+            </div>
+        </div>
+        <div class="shipping">
+            <i class="fa-solid fa-truck"></i>
+            <div class="ship-text">
+                <p>Free Shipping Method</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolores?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================pay and ship section end==================== -->
+
+    <section class="gallery">
+        <div class="gall-parent">
+            <div class="gall-child"><img src="../IMAGES/gallery/gallery1.jpg" alt=""></div>
+            <div class="gall-child"><img src="../IMAGES/gallery/gallery2.jpg" alt=""></div>
+            <div class="gall-child"><img src="../IMAGES/gallery/gallery3.jpg" alt=""></div>
+            <div class="gall-child"><img src="../IMAGES/gallery/gallery4.jpg" alt=""></div>
+            <div class="gall-child"><img src="../IMAGES/gallery/gallery5.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="foot-holder">
+            <div class="foot-card">
+                <img src="../IMAGES/logo/logo2_footer.png" alt="footlogo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore recusandae molestias nemo mollitia, aliquam tenetur </p>
+            </div>
+            <div class="foot-card">
+                <p>Quick Links</p>
+                <ul class="ft-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-card">
+                <p>New Products</p>
+                <ul class="ft-links">
+                    <li><a href="#">Woman Cloth</a></li>
+                    <li><a href="#">Fashion Accessories</a></li>
+                    <li><a href="#">Man Accessories</a></li>
+                    <li><a href="#">Rubber Made Toys</a></li>
+                </ul>
+            </div>
+            <div class="foot-card">
+                <p>Quick Links</p>
+                <ul class="ft-links">
+                    <li><a href="#">Frquently asked Questions</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <p class="copyright">Copyright &copy; 2023 All rights reserved | This template is made with 🔥 by <span>Roronoa Zoro</span></p>
+    </footer>
+    <script src="../JS/app.js"></script>
+</body>
+</html>
